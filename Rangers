@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC RANGERS DE SALAMANDERS | Officiel</title>
+    <style>
+        :root { --orange: #ff6600; --noir: #1a1a1a; --gris: #333; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--noir); color: white; scroll-behavior: smooth; }
+        
+        header { background: var(--orange); padding: 30px; text-align: center; border-bottom: 6px solid #000; }
+        header h1 { margin: 0; font-size: 2.5rem; text-shadow: 2px 2px #000; }
+        
+        nav { display: flex; justify-content: center; background: var(--gris); padding: 15px; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: var(--orange); }
+
+        .container { padding: 50px 20px; max-width: 1100px; margin: auto; }
+        h2 { border-left: 5px solid var(--orange); padding-left: 15px; text-transform: uppercase; margin-bottom: 30px; }
+
+        /* Tableau des Matchs */
+        .match-table { width: 100%; border-collapse: collapse; background: var(--gris); border-radius: 8px; overflow: hidden; }
+        .match-table th, .match-table td { padding: 15px; text-align: left; border-bottom: 1px solid #444; }
+        .match-table th { background: #444; color: var(--orange); }
+        .status { font-weight: bold; color: var(--orange); }
+
+        /* Formulaire */
+        .form-container { background: var(--gris); padding: 30px; border-radius: 10px; border-top: 5px solid var(--orange); }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 12px; border-radius: 5px; border: none; box-sizing: border-box; }
+        button { background: var(--orange); color: white; border: none; padding: 15px 30px; font-size: 1.1rem; font-weight: bold; border-radius: 5px; cursor: pointer; width: 100%; transition: 0.3s; }
+        button:hover { background: #e65c00; transform: scale(1.02); }
+
+        footer { text-align: center; padding: 30px; background: #000; color: #777; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BC RANGERS DE SALAMANDERS 🏀</h1>
+</header>
+
+<nav>
+    <a href="#matchs">Calendrier</a>
+    <a href="#inscriptions">Nous rejoindre</a>
+</nav>
+
+<div class="container" id="matchs">
+    <h2>Prochains Matchs & Résultats</h2>
+    <table class="match-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Adversaire</th>
+                <th>Lieu</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samedi 28 Mars</td>
+                <td>Dragons Verts</td>
+                <td>Domicile</td>
+                <td class="status">À VENIR</td>
+            </tr>
+            <tr>
+                <td>Mercredi 1 Avril</td>
+                <td>Titans Basket</td>
+                <td>Extérieur</td>
+                <td class="status">À VENIR</td>
+            </tr>
+            <tr>
+                <td>15 Mars</td>
+                <td>Lions du Congo</td>
+                <td>Domicile</td>
+                <td>Gagné (78 - 64)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container" id="inscriptions">
+    <h2>Rejoindre les Rangers</h2>
+    <div class="form-container">
+        <form action="#">
+            <div class="form-group">
+                <label>Nom complet</label>
+                <input type="text" placeholder="Ex: Jean Dupont">
+            </div>
+            <div class="form-group">
+                <label>Poste préféré</label>
+                <select>
+                    <option>Meneur</option>
+                    <option>Arrière</option>
+                    <option>Ailier</option>
+                    <option>Ailier fort</option>
+                    <option>Pivot</option>
+                    <option>Je ne sais pas encore</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Ton message / Ton expérience</label>
+                <textarea rows="4" placeholder="Parle-nous de toi..."></textarea>
+            </div>
+            <button type="submit">ENVOYER MA CANDIDATURE</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 BC RANGERS DE SALAMANDERS - Force & Honneur sur le terrain.</p>
+</footer>
+
+</body>
+</html>
